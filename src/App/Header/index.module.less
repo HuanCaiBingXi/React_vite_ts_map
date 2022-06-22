@@ -1,0 +1,65 @@
+.box {
+    .top-box {
+        position: relative;
+        // overflow: hidden;
+        padding: 0.1px;
+
+        .bg-img {
+            position: absolute;
+            background-size: contain;
+            width: 100%;
+            height: 300px;
+        }
+
+        .title-text {
+            position: relative;
+            z-index: 99;
+            text-align: center;
+            color: wheat;
+            margin-top: 0.3rem;
+            margin-left: 1rem;
+            width: 30vw;
+            box-shadow: 0 2px 20px rgb(0 0 0 /10%);
+            white-space: nowrap;
+
+        }
+
+        .cover-cards {
+            position: relative;
+            margin: 0 auto;
+            margin-top: 1rem;
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            width: calc(100% - 2rem);
+            transition: all 0.3s;
+
+            &>div {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+
+            .cover-tab {
+                background: #efefef;
+
+                &>div {
+                    width: 50%;
+                    text-align: center;
+                    height: 40px;
+                    line-height: 40px;
+
+
+                }
+
+            }
+
+
+        }
+
+    }
+
+}

@@ -4,6 +4,15 @@
     "module": "esnext",
     "moduleResolution": "node",
     "esModuleInterop": true,
+    "baseUrl": "./",
+    "paths": {
+      "@": [
+        "src"
+      ],
+      "@/*": [
+        "src/*"
+      ],
+    }
   },
   "include": [
     "vite.config.ts"

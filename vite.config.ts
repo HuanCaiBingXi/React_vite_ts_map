@@ -26,4 +26,13 @@ export default defineConfig({
             plugins: [postcssImport, autoprefixer, lessPluginAutoprefix],
         },
     },
+    server: {
+        proxy: {
+            "/api": {
+                target: "https://c.m.163.com",
+                changeOrigin: true,
+                rewrite: (path) => path.replace(/^\/api/, ""),
+            },
+        },
+    },
 });
